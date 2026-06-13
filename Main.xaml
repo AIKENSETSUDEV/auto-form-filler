@@ -142,7 +142,7 @@
       <AssemblyReference>DeserializeJSON817e4.vtYAD3raJ0F1DeVeI4NEAj5</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="947,2306" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="947,2378" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://docs.google.com/forms/d/e/1FAIpQLScTUbc2L2McukSBVBWJ4NsJSEnDC_MIlqU8Gl-R8Wmz-r9BAQ/viewform?usp=publish-editor" Name="FormUrL" />
     </Sequence.Variables>
@@ -151,16 +151,17 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2283" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="45b09f72-0599-4155-959a-497e674e1153" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2355" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="45b09f72-0599-4155-959a-497e674e1153" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2089" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2161" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="uwahm:HttpResponseSummary" Name="apiResult" />
               <Variable x:TypeArguments="uwavsdb:DeserializeJSON817e42" Name="deSerializedJson" />
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="index" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -276,19 +277,19 @@
                 </InArgument>
               </ui:DeserializeJson.JsonString>
             </ui:DeserializeJson>
-            <ui:ForEach x:TypeArguments="uwavsdb:words" CurrentIndex="{x:Null}" DisplayName="For Each currentwords" sap:VirtualizedContainerService.HintSize="452,428" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="10">
+            <ui:ForEach x:TypeArguments="uwavsdb:words" CurrentIndex="{x:Null}" DisplayName="For Each currentwords" sap:VirtualizedContainerService.HintSize="452,500" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="uwavsdb:words">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="uwavsdb:words" Name="currentwords" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,297" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,369" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="45b09f72-0599-4155-959a-497e674e1153" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="False" DelayAfter="0.2" DelayBetweenKeys="1" DisplayName="Type Into 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,309" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="45b09f72-0599-4155-959a-497e674e1153" Version="V5">
                       <uix:NTypeInto.EmptyFieldMode>
                         <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                           <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None</CSharpValue>
@@ -302,6 +303,19 @@
                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">currentwords.word</CSharpValue>
                         </InArgument>
                       </uix:NTypeInto.Text>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions Mode="AspectChanges">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLScTUbc2L2McukSBVBWJ4NsJSEnDC_MIlqU8Gl-R8Wmz-r9BAQ/viewform" ContentHash="zf3B2h8CPk2f2F9gPqJseQ" DesignTimeRectangle="666, 783, 295, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='i23 i26' tag='INPUT' type='text' /&gt;" Guid="b8f12f91-2255-4a27-97aa-80f58e3c0a84" InformativeScreenshot="636de5fc55c83f8ff2976685da4113a0.jpg" Reference="Kg5SX4oOpUC1GT-vScP7uA/aJBUZ-dQb0SVVH1CoR_2DA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Test Form' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:VerifyExecutionTypeIntoOptions.Target>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
                   </Sequence>
                 </ActivityAction>
