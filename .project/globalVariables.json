@@ -28,7 +28,7 @@
     "Name": "DATAAPI",
     "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
     "UnresolvedTypeFullyQualifiedName": null,
-    "Expression": "\"https://jlpt-vocab-api.vercel.app/api/words?level=3&limit=10\"",
+    "Expression": "\"https://jlpt-vocab-api.vercel.app/api/words\"",
     "IsLiteral": false
   },
   {
