@@ -259,7 +259,7 @@
               </uwah:NetHttpRequest.LocalFiles>
               <uwah:NetHttpRequest.Parameters>
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
-                  <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">new System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;() { { "limit", "3" },{ "offset", randoffset.ToString() } }</CSharpValue>
+                  <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">new System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;() { { "limit", "10" },{ "offset", randoffset.ToString() } }</CSharpValue>
                 </InArgument>
               </uwah:NetHttpRequest.Parameters>
               <uwah:NetHttpRequest.RequestUrl>
@@ -303,7 +303,7 @@
                 </InArgument>
               </ui:DeserializeJson.JsonString>
             </ui:DeserializeJson>
-            <ui:ForEach x:TypeArguments="uwavsdb:words" CurrentIndex="{x:Null}" DisplayName="For Each currentwords" sap:VirtualizedContainerService.HintSize="452,500" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+            <ui:ForEach x:TypeArguments="uwavsdb:words" CurrentIndex="{x:Null}" DisplayName="For Each currentwords" sap:VirtualizedContainerService.HintSize="452,500" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="10">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="uwavsdb:words">
                   <ActivityAction.Argument>
