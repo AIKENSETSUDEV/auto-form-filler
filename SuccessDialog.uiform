@@ -13,13 +13,15 @@
   "Data": {
     "components": [
       {
-        "tag": "h1",
+        "tag": "h4",
         "content": "SubmissionSuccess",
         "key": "label",
         "input": false,
         "tableView": false,
         "label": "Label",
-        "type": "label"
+        "type": "label",
+        "labelPosition": "center",
+        "keyModified": true
       },
       {
         "label": "Close",
