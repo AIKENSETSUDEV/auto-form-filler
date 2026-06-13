@@ -1,0 +1,13 @@
+﻿{
+  "Name": "送信",
+  "Type": "Element",
+  "Id": "M1mHN1S3VEGLOHdD3_pzcA",
+  "Reference": "Kg5SX4oOpUC1GT-vScP7uA/M1mHN1S3VEGLOHdD3_pzcA",
+  "ParentRef": "Kg5SX4oOpUC1GT-vScP7uA/5Zva20bHUUqQzDSFP2AZnA",
+  "Created": "2026-06-13T02:36:35.9652275Z",
+  "Updated": "2026-06-13T02:36:35.9652275Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,36 @@
+﻿{
+  "Metadata": {
+    "Id": "9cfdefd1-7f4d-415a-9bcb-c97a60d2a6b4",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "SuccessDialog",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h1",
+        "content": "SubmissionSuccess",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Close",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}

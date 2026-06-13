@@ -1,0 +1,50 @@
+[
+  {
+    "Constant": false,
+    "Name": "wordsarray",
+    "TypeFullyQualifiedName": "System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "newType",
+    "TypeFullyQualifiedName": "UiPathImportedTypes.newType.Bundle.newType, UiPathImportedTypes.HVQRQ1sDnEJ1gBvwm2NOxMu1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "responseRecord",
+    "TypeFullyQualifiedName": "UiPathImportedTypes.TypeName.Bundle.TypeName, UiPathImportedTypes.R5vBW2lFaQM1IWnEf1NUmED4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "DATAAPI",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"https://jlpt-vocab-api.vercel.app/api/words?level=3&limit=3\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "data",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"This is the data from api i hope\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "name",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"Test Name 1\"",
+    "IsLiteral": false
+  }
+]

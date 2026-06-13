@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JbUElgvh4EKmATzWBL0n8A" Reference="Kg5SX4oOpUC1GT-vScP7uA/Phmu6NC5W0OJ07Gn_U5UMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLScTUbc2L2McukSBVBWJ4NsJSEnDC_MIlqU8Gl-R8Wmz-r9BAQ/viewform" DesignTimeRectangle="666, 369, 295, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="8b179ab1-18a3-47d3-a9b7-40a160fc246f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Test Form' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2c0c59617221e89b562c7ba5db8be2ae.jpg" xmlns="">0CVmUcvcwZEaW-EgWSQqYFA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
